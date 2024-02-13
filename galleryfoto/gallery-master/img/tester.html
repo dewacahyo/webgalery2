@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        body {
+            background: teal;
+        }
+        .container{
+            /* margin: 0px 40px 0px 20px; */
+            /* padding: 0px 0px 0px 40px; */
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+            /* margin: 20px auto; */
+            align-items: center;
+            grid-gap: 20px;
+            /* padding: 0px 10px 0px 10px; */
+        }
+        img{
+            object-fit: cover;
+        }
+        .grid > img{
+            border-top-left-radius:30px ;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .grid > img:hover{
+            /* transform: rotate(15deg); */
+            /* transform: scale(0.5); zoom out */
+            transform: scale(1.2);/*zoom*/
+            /* transform: translate(50px); */
+        }
+        @media (max-width:1000px) {
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+        @media (max-width:800px) {
+            .grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="grid">
+            
+            <img src="11.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="12.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="13.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="22.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="33.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="44.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="55.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="66.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="77.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="88.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="99.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+            <img src="10.jpg" width= "300px" height="300px"><div class="konten">
+                
+            </div>
+          
+        </main>
+    </div>
+</body>
+</html>

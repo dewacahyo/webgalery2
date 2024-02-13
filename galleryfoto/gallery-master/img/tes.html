@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid | Grid Template Area</title>
+  <style>
+    html,
+    body {
+      /* margin: 0;
+        padding: 0; */
+      background-color: #ddd;
+    }
+
+    .container {
+      /* width: 80%; */
+      width: 100%;
+      /* margin: 50px auto; */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      grid-template-areas:
+        'nav nav nav'
+        'header header header'
+        'about about about'
+        'gallery gallery gallery'
+        'contact contact contact'
+        'footer footer footer';
+    }
+
+    @media screen and (min-width: 667px) {
+      .container {
+        grid-template-areas:
+          'nav nav nav'
+          'header header header'
+          'about about about'
+          'gallery gallery gallery'
+          'contact contact contact'
+          'footer footer footer';
+      }
+    }
+
+    .item {
+      
+      background-color: rgb(138, 209, 254);
+      /* display: flex; */
+    
+      /* justify-content: center; */
+      /* align-items: center;
+        padding: 100px;
+        box-sizing: border-box; */
+    }
+
+    /* .item:nth-child(even) {
+        background-color: rgb(255, 142, 142);
+      } */
+
+    ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 40%;
+    }
+    .nav {
+      grid-area: nav;
+      /* background-color: red;
+      border: 5px solid black; */
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: yellow;
+      border: 5px solid black;
+    }
+
+    .about {
+      grid-area: about;
+      background-color: green;
+      border: 5px solid black;
+    }
+
+    .gallery {
+      grid-area: gallery;
+      background-color: blue;
+      border: 5px solid black;
+    }
+
+    .contact {
+      grid-area: contact;
+      background-color: aqua;
+      border: 5px solid black;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: orange;
+      border: 5px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item nav">
+      <h4>Logo</h4>
+
+      <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+    </div>
+    <div class="item header">Header</div>
+      <!-- <div class="item about">About</div>
+      <div class="item gallery">Gallery</div>
+      <div class="item contact">Contact</div>
+      <div class="item footer">footer</div> -->
+    <!-- <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">2</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div> -->
+  </div>
+</body>
+
+</html>
